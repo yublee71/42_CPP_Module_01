@@ -3,16 +3,15 @@
 
 #include <string>
 
-class Zombie
-{
+class Zombie {
 public:
-	Zombie(std::string name);
-	~Zombie(void);
+  Zombie(std::string name);
+  ~Zombie(void);
 
-	void announce(void);
+  void announce(void);
 
 private:
-	std::string name_;
+  std::string name_;
 };
 
 Zombie *newZombie(std::string name);

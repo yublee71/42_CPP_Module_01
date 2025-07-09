@@ -2,7 +2,4 @@
 
 #include <string>
 
-Zombie *newZombie(std::string name)
-{
-	return (new Zombie(name));
-}
+Zombie *newZombie(std::string name) { return (new Zombie(name)); }
