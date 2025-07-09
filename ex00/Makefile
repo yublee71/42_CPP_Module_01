@@ -1,4 +1,4 @@
-NAME			:= zombie
+NAME			:= BraiiiiiiinnnzzzZ
 CC				:= c++
 MANDATORY_FLAGS	:= -Wall -Wextra -Werror -std=c++98
 CFLAGS			:= $(MANDATORY_FLAGS)
@@ -7,7 +7,7 @@ SRCS			:= \
 					main.cpp \
 					Zombie.cpp \
 					newZombie.cpp \
-					randomChump.cpp \
+					randomChump.cpp
 
 BUILD_DIR		:= build
 OBJS			:= $(SRCS:%.cpp=$(BUILD_DIR)/%.o)
@@ -22,7 +22,7 @@ $(NAME): $(OBJS)
 
 $(BUILD_DIR)/%.o: %.cpp
 		@if [ ! -d $(@D) ]; then mkdir -pv $(@D); fi
-		$(CC) $(CFLAGS) -c $^ -o $@
+		$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 		$(RM) $(RMFLAGS) $(BUILD_DIR)
@@ -32,4 +32,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
