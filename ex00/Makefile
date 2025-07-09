@@ -1,4 +1,4 @@
-NAME			:= BraiiiiiiinnnzzzZ
+NAME			:= zombie
 CC				:= c++
 MANDATORY_FLAGS	:= -Wall -Wextra -Werror -std=c++98
 CFLAGS			:= $(MANDATORY_FLAGS)
