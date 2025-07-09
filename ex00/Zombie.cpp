@@ -1,7 +1,7 @@
 #include "Zombie.hpp"
 
-#include <iostream>
 #include <string>
+#include <iostream>
 
 Zombie::Zombie(std::string name)
 {
