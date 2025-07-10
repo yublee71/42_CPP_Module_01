@@ -24,14 +24,14 @@ int main(int argc, char **argv) {
 
   const std::string infile_name = argv[1];
   std::ifstream infile(infile_name.c_str()); // TODO: without?
-  if (!infile.is_open()) {
+  if (!infile) {
     std::cout << "The file cannot be opened." << std::endl;
     return 1;
   }
 
   const std::string outfile_name = infile_name + ".replace";
   std::ofstream outfile(outfile_name.c_str());
-  if (!outfile.is_open()) {
+  if (!outfile) {
     std::cout << "The output file cannot be opened." << std::endl;
     return 1;
   }
