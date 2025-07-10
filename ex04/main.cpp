@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
   }
 
   const std::string infile_name = argv[1];
-  std::ifstream infile(infile_name.c_str()); // TODO: without?
+  std::ifstream infile(infile_name.c_str());
   if (!infile) {
     std::cout << "The file cannot be opened." << std::endl;
     return 1;
