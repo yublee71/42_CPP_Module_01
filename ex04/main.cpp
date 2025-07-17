@@ -6,6 +6,8 @@ std::string ftReplace(std::string &buffer, const std::string &search,
                       const std::string &replace) {
   size_t found_pos = 0;
 
+  if (!search.length())
+    return buffer;
   while ((found_pos = buffer.find(search, found_pos)) != std::string::npos) {
     buffer = buffer.substr(0, found_pos) + replace +
              buffer.substr(found_pos + search.length());
